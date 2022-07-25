@@ -1,8 +1,8 @@
 <?php $name=$_POST['NAME'];
 $PW=$_POST['PASSWORD'];
 $id=$_POST['ID'];
-$con = mysqli_connect("localhost","ksh","qwerasdf1") or die ("Can't access DB");
-$query = "INSERT INOT user_info (id,pw,name) values('".$id."','".$PW."','".$name."')";
+$con = mysqli_connect("localhost","ksh","qwerasdf1", "13FDB") or die ("Can't access DB");
+$query = "INSERT INTO user_info (id,pw,name) values('".$id."','".$PW."','".$name."')";
 $result=mysqli_query($con,$query);
 if(!$result) 
 {?>
