@@ -3,7 +3,7 @@ $PW=$_POST['PASSWORD'];
 $id=$_POST['ID'];
 $con = mysqli_connect("localhost","ksh","qwerasdf1") or die ("Can't access DB");
 $query = "insert into user_info (id,pw,name) values('".$id."','".$PW."','".$name."')";
-$resut=mysqli_query($con,$query);
+$result=mysqli_query($con,$query);
 if(!$result) 
 {?>
     <script> alert('회원가입이 완료되었습니다.'); location.href=".."; </script> 
