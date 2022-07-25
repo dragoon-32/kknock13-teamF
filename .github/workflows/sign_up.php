@@ -1,9 +1,10 @@
 <html>
 <body>
 
-<form action="welcome.php" method="post">
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
+<form action="sign_act" method="post">
+ID: <input type="text" name="ID"><br>
+PASSWORD: <input type="text" name="PASSWORD"><br>
+NAME: <input type="text" name="NAME"><br>
 <input type="submit">
 </form>
 
