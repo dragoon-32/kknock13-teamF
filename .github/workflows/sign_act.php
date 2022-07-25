@@ -2,7 +2,7 @@
 $PW=$_POST['PASSWORD'];
 $id=$_POST['ID'];
 $con = mysqli_connect("localhost","ksh","qwerasdf1") or die ("Can't access DB");
-$query = "insert into user_info (id,pw,name) values('".$id."','".$PW."','".$name."')";
+$query = "INSERT INOT user_info (id,pw,name) values('".$id."','".$PW."','".$name."')";
 $result=mysqli_query($con,$query);
 if(!$result) 
 {?>
