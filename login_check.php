@@ -21,7 +21,7 @@ foreach($row as $key => $r){
 // DB 정보를 가져왔으니 
 // 비밀번호 검증 로직을 실행하면 된다.
 $passwordResult = password_verify($password, $hashedPassword);
-if ($passwordResult === true) {
+if ($passwordResult == true) {
     // 로그인 성공
     // 세션에 id 저장
     session_start();
