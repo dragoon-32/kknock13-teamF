@@ -4,7 +4,7 @@
 </head>
 <body>
 
-<form action="sign_act" method="post">
+<form action="sign_act.php" method="post">
 ID: <input type="text" name="ID"><br>
 PASSWORD: <input type="text" name="PASSWORD"><br>
 NAME: <input type="text" name="NAME"><br>
