@@ -7,7 +7,7 @@ $id = $_POST['ID'];
 $password = $_POST['PASSWORD'];
 
 // DB 정보 가져오기 
-$sql = "SELECT * FROM test WHERE id ='{$id}'";
+$sql = "SELECT * FROM test WHERE id ='$id';";
 $result = mysqli_query($conn, $sql);
 
 $row = mysqli_fetch_array($result);
