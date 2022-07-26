@@ -2,7 +2,7 @@
 $connect = mysqli_connect('localhost', 'ksh', 'qwerasdf1', '13FDB') or die("connect failed");
 
 $id = $_POST['ID'];
-$pw = $_POST['PASSWORD'];
+$pw = password_hash($_POST['PASSWORD'], PASSWORD_DEFAULT);
 $name = $_POST['NAME'];
 
 //id 중복 확인
