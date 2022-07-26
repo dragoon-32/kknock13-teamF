@@ -6,7 +6,7 @@ $pw = $_POST['PASSWORD'];
 $name = $_POST['NAME'];
 
 //id 중복 확인
-$query1 = "select * from user_info where id='$id'";
+$query1 = "select * from test where id='$id'";
 $result1 = $connect->query($query1);
 $count = mysqli_num_rows($result1);
 
@@ -17,7 +17,7 @@ if ($count) {      //만약 중복된 id가 있다면
     </script>
     <?php } else {  //없다면
     //입력받은 데이터를 DB에 저장
-    $query = "insert into user_info(id, password, name) values('$id', '$pw', '$name')";
+    $query = "insert into test(id, PW, Name) values('$id', '$pw', '$name')";
 
     $result = $connect->query($query);
 
