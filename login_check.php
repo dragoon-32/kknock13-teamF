@@ -13,10 +13,8 @@ $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_array($result);
 $hashedPassword = $row['PW'];
 $row['id'];
+echo $row['id'];
 
-foreach($row as $key => $r){
-    echo "{$key} : {$r} <br>";
-}
 // echo $row['id'];
 // DB 정보를 가져왔으니 
 // 비밀번호 검증 로직을 실행하면 된다.
