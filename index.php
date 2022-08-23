@@ -5,6 +5,7 @@
     </head>
     <body>
         <?php
+        session_start();
         if(isset($_SESSION['userid'])){
         ?>
             <meta http-equiv="refresh" content="1;URL='main_board.php'">

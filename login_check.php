@@ -27,7 +27,7 @@ if (password_verify($password, $hashedPassword)) {
 ?>
     <script>
         alert("로그인에 성공하였습니다.")
-        location.href = "index.html";
+        location.href = "index.php";
     </script>
 <?php
 } else {
