@@ -1,7 +1,9 @@
 <?php
 session_start();
 if(isset($_SESSION['userid'])) {
-    echo "<script>location.replace('main_board.php');</script>";            
+    ?>
+    <meta http-equiv="refresh" content="1;URL='main_board.php'">   
+    <?php        
 }
 
 else {
