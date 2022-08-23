@@ -5,7 +5,9 @@ session_start();
     <?php
     if(isset($_SESSION['userid'])){
     ?>
-        <meta http-equiv="refresh" content="1;URL='main_board.php'">
+    <script>
+        location.href = "main_board.php";
+    </script>
     <?php
     } else {
         ?>
