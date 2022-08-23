@@ -8,8 +8,8 @@ $date = date('Y-m-d H:i:s');            //Date
 
 
 
-$query = "INSERT INTO board_info (user, title, ViewNum, text) 
-        values('$id', '$title', 1, '$content')";
+$query = "INSERT INTO board_info (user, title, date, ViewNum, text) 
+        values('$id', '$title', $date, 1, '$content')";
 
 
 $result = mysqli_query($connect, $query);
