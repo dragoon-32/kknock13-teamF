@@ -1,4 +1,5 @@
 <?php 
+$conn = mysqli_connect("localhost", "ksh", "qwerasdf1", "13FDB");
 session_start(); 
 ?>
 <body>
