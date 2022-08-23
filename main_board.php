@@ -45,6 +45,7 @@
 </head>
 
 <body>
+    <button onclick="location.href='logout.php'">로그아웃</button>
     <?php
     $connect = mysqli_connect('localhost', 'ksh', 'qwerasdf1', '13FDB') or die("connect failed");
     $query = "select * from board_info order by seq desc";    //역순 출력
