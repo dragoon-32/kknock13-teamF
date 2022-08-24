@@ -82,7 +82,7 @@
             font-weight: bold;
             float: left;
             margin-left: 20px;
-        }
+        }  +
 
         .read_com_id {
             width: 100px;
@@ -97,7 +97,7 @@
 <body>
     <?php
     $connect = mysqli_connect('localhost', 'ksh', 'qwerasdf1', '13FDB');
-    $number = $_GET['seq'];  // GET 방식 사용
+    $number = $_GET['number'];  // GET 방식 사용
     session_start();
     $query = "select title, text, ViewNum, user from board_info where seq = $number";
     $result = $connect->query($query);
