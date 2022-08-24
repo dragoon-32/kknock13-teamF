@@ -79,7 +79,7 @@
                     <?php } ?>
                     <td width="50" align="center"><?php echo $total ?></td>
                     <td width="500" align="center">
-                        <a href="view.php?number=<?php echo $rows['seq'] ?>">
+                        <a href="read.php?number=<?php echo $rows['seq'] ?>">
                             <?php echo $rows['title'] ?>
                     </td>
                     <td width="100" align="center"><?php echo $rows['user'] ?></td>
