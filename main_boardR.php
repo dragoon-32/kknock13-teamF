@@ -48,7 +48,7 @@
     <button onclick="location.href='logout.php'">로그아웃</button>
     <?php
     $connect = mysqli_connect('localhost', 'ksh', 'qwerasdf1', '13FDB') or die("connect failed");
-    $query = "select * from board_info order by seq desc";    //역순 출력
+    $query = "select * from board_info order by seq asc";    //역순 출력
     $result = mysqli_query($connect, $query);
     //$result = $connect->query($query);
     $total = mysqli_num_rows($result);  //result set의 총 레코드(행) 수 반환
@@ -95,7 +95,7 @@
 
     <div class=text>
         <font style="cursor: hand" onClick="location.href='./write.php'">글쓰기</font>
-        <br><button onclick="location.href='main_boardR.php'">오름차순</button>
+        <br><button onclick="location.href='main_board.php'">내림차순</button>
     </div>
 </body>
 
