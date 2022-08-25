@@ -77,7 +77,7 @@
                     <tr>
                         <!--배경색 그냥-->
                     <?php } ?>
-                    <td width="50" align="center"><?php echo $total ?></td>
+                    <td width="50" align="center"><?php echo $rows['seq'] ?></td>
                     <td width="500" align="center">
                         <a href="read.php?number=<?php echo $rows['seq'] ?>">
                             <?php echo $rows['title'] ?>
