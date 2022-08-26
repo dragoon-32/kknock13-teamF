@@ -47,8 +47,9 @@
 <body>
     <button onclick="location.href='logout.php'">로그아웃</button>
     <?php
+    $keyword = $_POST['keyword'];
     $connect = mysqli_connect('localhost', 'ksh', 'qwerasdf1', '13FDB') or die("connect failed");
-    $query = "select * from board_info order by seq desc";    //역순 출력
+    $query = "select * from board_info where title like '$keyword' order by seq asc";    //역순 출력
     $result = mysqli_query($connect, $query);
     //$result = $connect->query($query);
     $total = mysqli_num_rows($result);  //result set의 총 레코드(행) 수 반환
@@ -77,7 +78,7 @@
                     <tr>
                         <!--배경색 그냥-->
                     <?php } ?>
-                    <td width="50" align="center"><?php echo $total ?></td>
+                    <td width="50" align="center"><?php echo $rows['seq'] ?></td>
                     <td width="500" align="center">
                         <a href="read.php?number=<?php echo $rows['seq'] ?>">
                             <?php echo $rows['title'] ?>
@@ -94,9 +95,7 @@
     </table>
 
     <div class=text>
-        <font style="cursor: hand" onClick="location.href='./write.php'">글쓰기</font>
-        <br><button onclick="location.href='search.php'">검색</button>
-        <br><button onclick="location.href='main_boardR.php'">오름차순</button>
+        <br><button onclick="location.href='main_boardR.php'">메인으로</button>
     </div>
 </body>
 
