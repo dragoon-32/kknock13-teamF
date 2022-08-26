@@ -95,8 +95,7 @@
     </table>
 
     <div class=text>
-        <font style="cursor: hand" onClick="location.href='./write.php'">글쓰기</font>
-        <br><button onclick="location.href='main_board.php'">내림차순</button>
+        <br><button onclick="location.href='main_boardR.php'">메인으로</button>
     </div>
 </body>
 
