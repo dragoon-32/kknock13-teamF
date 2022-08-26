@@ -93,6 +93,10 @@
         </tbody>
     </table>
 
+    <form action="searchR.php" method="post">
+    Keyword: <input type="text" name="keyword"><br>
+    <input type="submit">
+
     <div class=text>
         <font style="cursor: hand" onClick="location.href='./write.php'">글쓰기</font>
         <br><button onclick="location.href='main_board.php'">내림차순</button>
