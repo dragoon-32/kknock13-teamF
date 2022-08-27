@@ -25,7 +25,7 @@ if ($count) {      //만약 중복된 id가 있다면
     if ($result) {
     ?> <script>
             alert('회원가입에 성공하였습니다.');
-            location.replace("index.html");
+            location.replace("index.php");
         </script>
 
     <?php } else {

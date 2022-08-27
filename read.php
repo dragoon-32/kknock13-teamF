@@ -124,7 +124,9 @@
 
     <!-- MODIFY & DELETE 추후 세션처리로 보완 예정 -->
     <div class="read_btn">
-        <button class="read_btn1" onclick="location.href='main_board.php'">목록</button>;
+        <button class="read_btn1" onclick="location.href='main_board.php'">목록</button>&nbsp;&nbsp;
+        <button class="read_btn1" onclick="location.href='modify.php?number=<?= $number ?>'">수정</button>&nbsp;&nbsp;
+        <button class="read_btn1" onclick="location.href='delete.php?number=<?= $number ?>'">삭제</button>
     </div>
 </body>
 
