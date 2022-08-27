@@ -144,7 +144,7 @@
     //$result = $connect->query($query);
     $total = mysqli_num_rows($result);  //result set의 총 레코드(행) 수 반환
     ?>
-    <p style="font-size:25px; text-align:center"><b>게시판</b></p>
+    <p style="font-size:25px; text-align:center"><b>댓글</b></p>
     <table align=center>
         <thead align="center">
             <tr>
