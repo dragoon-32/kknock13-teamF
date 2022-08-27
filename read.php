@@ -127,6 +127,7 @@
         <button class="read_btn1" onclick="location.href='main_board.php'">목록</button>&nbsp;&nbsp;
         <button class="read_btn1" onclick="location.href='modify.php?number=<?= $number ?>'">수정</button>&nbsp;&nbsp;
         <button class="read_btn1" onclick="location.href='delete.php?number=<?= $number ?>'">삭제</button>
+        <br><button onclick="location.href='comment_read.php?number=<?php echo $number?>'">댓글</button>
     </div>
 </body>
 
