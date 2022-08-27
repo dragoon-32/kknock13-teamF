@@ -179,10 +179,8 @@
 
     <div class="dap_ins">
 		<form action="comment_act.php?idx=<?php echo $number; ?>" method="post">
-			<div style="margin-top:10px; ">
-				<textarea name="content" class="reply_content" id="re_content" ></textarea>
-			</div>
-            <input type="submit">
+        내용: <input type="text" name="content"><br>
+        <input type="submit">
 		</form>
 	</div>
 </body>
