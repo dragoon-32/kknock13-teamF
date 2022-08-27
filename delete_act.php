@@ -4,7 +4,15 @@ $key = $_POST['key'];
 $num = $_POST['num'];
 $query = "delete from board_info where seq = '$num'";
 if($key =='ksh91giro'){
-    mysqli_query($conn, $query);
+    if(mysqli_query($conn, $query)){
+        ?>
+        <script>
+        location.replace("main_board.php");
+    <?php
+    }
+    else{
+        echo "failed";
+    }
 }
 else{
     echo "invalid key";
