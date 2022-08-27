@@ -1,8 +1,9 @@
 <?php
     $conn = mysqli_connect("localhost", "ksh", "qwerasdf1", "13FDB");
     $num = $_GET['idx'];
+    $text = $_POST['content']
     $query = "INSERT INTO comment (con_num, text) 
-        values('$num', '$_POST['content']')";
+        values('$num', '$text')";
 	$result = mysqli_query($connect, $query);
     if ($result) {
     ?> <script>
