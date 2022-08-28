@@ -177,12 +177,12 @@
         </tbody>
     </table>
 
-    <div class="dap_ins">
-		<form action="comment_act.php?idx=<?php echo $number; ?>" method="post">
-        내용: <input type="text" name="content"><br>
-        <input type="submit">
-		</form>
-	</div>
+    
+	<form action="comment_act.php?idx=<?php echo $number; ?>" method="post">
+    내용: <input type="text" name="content"><br>
+    <input type="submit">
+	</form>
+	
 </body>
 
 </html>
