@@ -3,7 +3,7 @@
     $num = $_GET['idx'];
     $text = $_POST['content'];
     $query = "INSERT INTO comment (con_num, text) values($num, '$text')";
-	$result = mysqli_query($connect, $query);
+	$result = mysqli_query($conn, $query);
     if ($result) {
     ?> <script>
             alert("<?php echo "댓글이 등록되었습니다." ?>");
