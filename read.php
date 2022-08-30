@@ -122,6 +122,12 @@
         </tr>
     </table>
 
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+    Select file to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+    </form>
+
     <!-- MODIFY & DELETE 추후 세션처리로 보완 예정 -->
     <div class="read_btn">
         <button class="read_btn1" onclick="location.href='main_board.php'">목록</button>&nbsp;&nbsp;
